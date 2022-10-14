@@ -1,7 +1,7 @@
 <h1>Our Menu</h1>
 <div class="container text-center">
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-    <div *ngFor="let p of products">
+    <div *ngFor="let p of products; index as productId">
       <div class="col">
         <div class="card">
           <img src="{{ p.image }}" class="card-img-top img-fluid" alt="..." />
@@ -15,7 +15,12 @@
                 {{ p.price | currency }}
               </p>
               <div *ngIf="p.availability; else elseBlock">
-                <button class="btn btn-success">Details</button>
+                <button
+                  class="btn btn-success"
+                  routerLink="/products/{{ productId }}"
+                >
+                  Details
+                </button>
                 <button class="btn btn-primary ms-5">Order</button>
               </div>
               <ng-template #elseBlock>
