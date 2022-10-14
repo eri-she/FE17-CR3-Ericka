@@ -7,6 +7,7 @@ import { IProducts } from './products/interfacep';
 export class CartService {
   items: IProducts[] = [];
   total: number = 0;
+  newTotal: number = 0;
 
   constructor() {}
   addToCart(product: IProducts) {
@@ -26,5 +27,11 @@ export class CartService {
       this.total += p.price;
     }
     return this.total;
+  }
+  getDiscount() {
+    if (this.total > 40) {
+      this.newTotal = this.total - 0.15 * this.total;
+    }
+    return this.newTotal;
   }
 }

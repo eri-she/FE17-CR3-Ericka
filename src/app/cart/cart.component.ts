@@ -10,11 +10,13 @@ import { IProducts } from '../products/interfacep';
 export class CartComponent implements OnInit {
   items: IProducts[] = [];
   total: number = 0;
+  newTotal: number = 0;
 
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
     this.items = this.cartService.getItems();
     this.total = this.cartService.getTotal();
+    this.newTotal = this.cartService.getDiscount();
   }
 }

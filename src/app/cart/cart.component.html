@@ -7,3 +7,7 @@
 <hr />
 
 <p class="text-center">Total: {{ total | currency }}</p>
+
+<p *ngIf="newTotal > 0" class="text-center text-danger">
+  You´ve got 15% discount, pay only {{ newTotal | currency }}
+</p>
