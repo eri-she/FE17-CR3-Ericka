@@ -15,12 +15,12 @@
                 {{ p.price | currency }}
               </p>
               <div *ngIf="p.availability; else elseBlock">
-                <button
+                <a
                   class="btn btn-success"
                   routerLink="/products/{{ productId }}"
                 >
                   Details
-                </button>
+                </a>
                 <button class="btn btn-primary ms-5">Order</button>
               </div>
               <ng-template #elseBlock>
