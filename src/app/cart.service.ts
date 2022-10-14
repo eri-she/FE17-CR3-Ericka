@@ -17,10 +17,6 @@ export class CartService {
     return this.items;
   }
 
-  clearCart() {
-    this.items = [];
-    return this.items;
-  }
   getTotal() {
     this.total = 0;
     for (let p of this.items) {
