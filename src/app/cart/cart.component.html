@@ -1,1 +1,9 @@
-<p>cart works!</p>
+<h1 class="text-center">Your Order</h1>
+<div *ngFor="let item of items" class="container text-center">
+  <p>
+    <strong>{{ item.name }} </strong> price: {{ item.price | currency }}
+  </p>
+</div>
+<hr />
+
+<p class="text-center">Total: {{ total | currency }}</p>

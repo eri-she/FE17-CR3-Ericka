@@ -21,6 +21,7 @@ export class CartService {
     return this.items;
   }
   getTotal() {
+    this.total = 0;
     for (let p of this.items) {
       this.total += p.price;
     }

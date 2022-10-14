@@ -9,6 +9,7 @@ import { IProducts } from '../products/interfacep';
 })
 export class MenuComponent implements OnInit {
   products: Array<IProducts> = products;
+
   constructor() {}
 
   ngOnInit(): void {}
