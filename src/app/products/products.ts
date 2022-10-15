@@ -73,7 +73,7 @@ export const products = [
     price: 9,
     image: `https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457_960_720.jpg`,
     description:
-      'As we all know, breakfast is the most important meal of the day - so why not make it delicious!, try our toasts',
+      'As we all know, breakfast is the most important meal of the day - so why not make it delicious!, try our toasts.',
     availability: true,
   },
 ];
