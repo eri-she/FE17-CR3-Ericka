@@ -20,7 +20,7 @@ export const products = [
     price: 12,
     image: `https://cdn.pixabay.com/photo/2017/01/16/17/45/pancake-1984716_960_720.jpg`,
     description:
-      'A pancake is a thin, flat, circular piece of cooked batter made from milk, flour, and egg',
+      'A pancake is a thin, flat, circular piece of cooked batter made from milk, flour, and egg. In our Restaurant we serve them with fruits and maple',
     availability: true,
   },
   {
@@ -49,7 +49,8 @@ export const products = [
     name: 'Breakfast',
     price: 9,
     image: `https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457_960_720.jpg`,
-    description: 'A creamy dessert of espresso-soaked ladyfingers ',
+    description:
+      'As we all know, breakfast is the most important meal of the day - so why not make it delicious!, try our toasts ',
     availability: true,
   },
   {
@@ -72,7 +73,7 @@ export const products = [
     price: 9,
     image: `https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457_960_720.jpg`,
     description:
-      'As we all know, breakfast is the most important meal of the day - so why not make it delicious!',
+      'As we all know, breakfast is the most important meal of the day - so why not make it delicious!, try our toasts',
     availability: true,
   },
 ];
