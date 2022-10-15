@@ -1,0 +1,20 @@
+.image {
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_960_720.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.text-image {
+  background-color: rgba(0, 0, 0, 0.479);
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.food {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: goldenrod;
+}
