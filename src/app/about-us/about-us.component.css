@@ -1,0 +1,33 @@
+.text {
+  display: block;
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  letter-spacing: 1px;
+  font-size: larger;
+}
+.title {
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border-radius: 30% 30% 0 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about {
+  height: 90vh;
+}
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+  .text {
+    font-size: small;
+  }
+}

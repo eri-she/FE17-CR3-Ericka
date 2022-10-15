@@ -8,7 +8,8 @@
     <div class="card-body">
       <h5 class="card-title">{{ product.name }}</h5>
       <p class="card-text">{{ product.description }}</p>
-      <p class="card-text"></p>
+      <hr />
+      <p class="card-text">{{ product.price | currency }}</p>
       <div *ngIf="product.availability; else elseBlock">
         <button class="btn btn-primary" (click)="addToCart()">Order</button>
       </div>

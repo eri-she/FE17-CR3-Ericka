@@ -1,13 +1,16 @@
-<h1 class="text-center">Your Order</h1>
-<div *ngFor="let item of items" class="container text-center">
-  <p>
-    <strong>{{ item.name }} </strong> price: {{ item.price | currency }}
+<div class="promotion"><h2>Get 15% discount in orders above $40</h2></div>
+<div class="checkout">
+  <h1 class="text-center">Your Order</h1>
+  <div *ngFor="let item of items" class="container text-center">
+    <p>
+      <strong>{{ item.name }} </strong> price: {{ item.price | currency }}
+    </p>
+  </div>
+  <hr />
+
+  <p class="text-center">Total: {{ total | currency }}</p>
+
+  <p *ngIf="newTotal > 0" class="text-center text-danger">
+    You´ve got 15% discount, pay only {{ newTotal | currency }}
   </p>
 </div>
-<hr />
-
-<p class="text-center">Total: {{ total | currency }}</p>
-
-<p *ngIf="newTotal > 0" class="text-center text-danger">
-  You´ve got 15% discount, pay only {{ newTotal | currency }}
-</p>

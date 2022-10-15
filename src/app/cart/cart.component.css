@@ -1,0 +1,9 @@
+.checkout {
+  height: 80vh;
+  margin: 10px;
+}
+.promotion {
+  background-color: red;
+  text-align: center;
+  color: white;
+}
