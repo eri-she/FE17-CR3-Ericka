@@ -16,7 +16,7 @@ export class CartComponent implements OnInit {
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-    // as soon as the page is loaded, we request to get all the information that was pushed to the array.
+    // as soon as the page is loaded, we request to get all the information that was pushed to the array so we can do a loop in the html file and display the information.
     this.items = this.cartService.getItems();
     // We call the function "getTotal" and "getDiscount" so we can display the value in the html file
     this.total = this.cartService.getTotal();
