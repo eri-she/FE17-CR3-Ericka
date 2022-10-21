@@ -8,6 +8,7 @@ import { IProducts } from '../products/interfacep';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
+  // We declared empty variables that will change their value when we call the functions.
   items: IProducts[] = [];
   total: number = 0;
   newTotal: number = 0;
@@ -15,7 +16,9 @@ export class CartComponent implements OnInit {
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
+    // as soon as the page is loaded, we request to get all the information that was pushed to the array.
     this.items = this.cartService.getItems();
+    // We call the function "getTotal" and "getDiscount" so we can display the value in the html file
     this.total = this.cartService.getTotal();
     this.newTotal = this.cartService.getDiscount();
   }

@@ -10,6 +10,7 @@ export class CartService {
   newTotal: number = 0;
 
   constructor() {}
+  // we came up with the name product, it is a parameter that we will need  to push the object to the array.
   addToCart(product: IProducts) {
     this.items.push(product);
   }
