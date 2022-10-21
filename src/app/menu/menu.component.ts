@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../products/products';
 import { IProducts } from '../products/interfacep';
+import { ActivatedRoute, Params } from '@angular/router';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-menu',
@@ -10,7 +12,10 @@ import { IProducts } from '../products/interfacep';
 export class MenuComponent implements OnInit {
   products: Array<IProducts> = products;
 
-  constructor() {}
-
+  constructor(private cartService: CartService) {}
+  addToCart(item: IProducts) {
+    window.alert('Your product has been added to the cart!');
+    this.cartService.addToCart(item);
+  }
   ngOnInit(): void {}
 }
