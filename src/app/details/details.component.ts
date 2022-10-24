@@ -10,6 +10,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent implements OnInit {
+  // define product and ID.
   product: IProducts = {} as IProducts;
   products: Array<IProducts> = products;
   id: number = 0;
